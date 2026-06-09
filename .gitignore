@@ -1,0 +1,80 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 前端构建产物
+frontend/dist/
+frontend/.vite/
+
+# Electron 构建产物
+electron/node_modules/
+release/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 测试数据和日志
+*.log
+backend.log
+backend_realtest.log
+frontend_realtest.log
+*.json.bak
+
+# 测试产物（保留少量示例，排除大量输出）
+workflow_result.json
+fullduplex_request.json
+fullduplex_report_resp.json
+report_response.json
+test_report_data.json
+generated_report.md
+recalc_result.txt
+cloud_analysis.txt
+corpus_full.txt
+corpus_clean.tsv
+tag_lines_clean.txt
+
+# 数据目录（如果包含真实测试数据）
+data/
+
+# PyInstaller spec 产物
+backend/build/
+backend/dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.temp

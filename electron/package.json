@@ -1,0 +1,49 @@
+{
+  "name": "ai-voice-test-tool",
+  "version": "1.0.0",
+  "description": "AI辅助语音自动化测试工具",
+  "author": "Your Organization",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "build:win": "electron-builder --win --x64"
+  },
+  "build": {
+    "appId": "com.aivoice.test.framework",
+    "productName": "AI语音测试工具",
+    "directories": {
+      "output": "../release"
+    },
+    "files": [
+      "../frontend/dist/**/*",
+      "main.js",
+      "preload.js"
+    ],
+    "extraResources": [
+      {
+        "from": "../build/dist/ai-voice-test-backend.exe",
+        "to": "backend/ai-voice-test-backend.exe"
+      },
+      {
+        "from": "../workflows",
+        "to": "workflows"
+      }
+    ],
+    "win": {
+      "target": ["nsis"],
+      "icon": "../assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "AI语音测试工具"
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.0.0"
+  }
+}

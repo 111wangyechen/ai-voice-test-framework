@@ -1,0 +1,606 @@
+{
+  "metrics": [
+    {
+      "timestamp": 1780645406,
+      "cpu_usage": 3.8,
+      "cpu_idle": 96.2,
+      "mem_available_mb": 209.83,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 0.0,
+          "mem_mb": 17.7
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645409,
+      "cpu_usage": 3.0,
+      "cpu_idle": 97.0,
+      "mem_available_mb": 210.04,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 3.8,
+          "mem_mb": 17.7
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645411,
+      "cpu_usage": 5.8,
+      "cpu_idle": 94.2,
+      "mem_available_mb": 208.95,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 0.0,
+          "mem_mb": 17.7
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645414,
+      "cpu_usage": 21.2,
+      "cpu_idle": 78.8,
+      "mem_available_mb": 209.86,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 29.6,
+          "mem_mb": 18.0
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645416,
+      "cpu_usage": 4.8,
+      "cpu_idle": 95.2,
+      "mem_available_mb": 210.45,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 0.0,
+          "mem_mb": 17.8
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645419,
+      "cpu_usage": 7.8,
+      "cpu_idle": 92.2,
+      "mem_available_mb": 211.05,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 0.0,
+          "mem_mb": 17.8
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645422,
+      "cpu_usage": 8.8,
+      "cpu_idle": 91.2,
+      "mem_available_mb": 209.87,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 0.0,
+          "mem_mb": 17.8
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645424,
+      "cpu_usage": 3.8,
+      "cpu_idle": 96.2,
+      "mem_available_mb": 209.62,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 3.8,
+          "mem_mb": 17.8
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645427,
+      "cpu_usage": 29.8,
+      "cpu_idle": 70.2,
+      "mem_available_mb": 204.55,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 50.0,
+          "mem_mb": 17.8
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645430,
+      "cpu_usage": 10.5,
+      "cpu_idle": 89.5,
+      "mem_available_mb": 204.55,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 3.8,
+          "mem_mb": 18.1
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645432,
+      "cpu_usage": 7.8,
+      "cpu_idle": 92.2,
+      "mem_available_mb": 204.88,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 0.0,
+          "mem_mb": 18.1
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645435,
+      "cpu_usage": 8.8,
+      "cpu_idle": 91.2,
+      "mem_available_mb": 202.46,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 0.0,
+          "mem_mb": 18.1
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645437,
+      "cpu_usage": 3.0,
+      "cpu_idle": 97.0,
+      "mem_available_mb": 204.79,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 0.0,
+          "mem_mb": 18.1
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645440,
+      "cpu_usage": 3.8,
+      "cpu_idle": 96.2,
+      "mem_available_mb": 205.72,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 0.0,
+          "mem_mb": 18.0
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645443,
+      "cpu_usage": 30.5,
+      "cpu_idle": 69.5,
+      "mem_available_mb": 203.74,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 51.8,
+          "mem_mb": 18.0
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645445,
+      "cpu_usage": 3.8,
+      "cpu_idle": 96.2,
+      "mem_available_mb": 208.27,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 0.0,
+          "mem_mb": 17.8
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645448,
+      "cpu_usage": 4.8,
+      "cpu_idle": 95.2,
+      "mem_available_mb": 210.29,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 0.0,
+          "mem_mb": 17.8
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645451,
+      "cpu_usage": 3.8,
+      "cpu_idle": 96.2,
+      "mem_available_mb": 208.4,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 0.0,
+          "mem_mb": 17.8
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645453,
+      "cpu_usage": 7.5,
+      "cpu_idle": 92.5,
+      "mem_available_mb": 207.57,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 0.0,
+          "mem_mb": 17.8
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645456,
+      "cpu_usage": 3.8,
+      "cpu_idle": 96.2,
+      "mem_available_mb": 208.25,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 0.0,
+          "mem_mb": 17.8
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645458,
+      "cpu_usage": 29.8,
+      "cpu_idle": 70.2,
+      "mem_available_mb": 206.17,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 55.5,
+          "mem_mb": 18.2
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645461,
+      "cpu_usage": 10.2,
+      "cpu_idle": 89.8,
+      "mem_available_mb": 206.94,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 3.7,
+          "mem_mb": 18.1
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645464,
+      "cpu_usage": 8.8,
+      "cpu_idle": 91.2,
+      "mem_available_mb": 206.0,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 0.0,
+          "mem_mb": 18.1
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645466,
+      "cpu_usage": 4.8,
+      "cpu_idle": 95.2,
+      "mem_available_mb": 206.55,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 0.0,
+          "mem_mb": 18.1
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645469,
+      "cpu_usage": 8.8,
+      "cpu_idle": 91.2,
+      "mem_available_mb": 204.17,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 0.0,
+          "mem_mb": 18.1
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645472,
+      "cpu_usage": 4.8,
+      "cpu_idle": 95.2,
+      "mem_available_mb": 205.11,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 0.0,
+          "mem_mb": 18.1
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645474,
+      "cpu_usage": 9.5,
+      "cpu_idle": 90.5,
+      "mem_available_mb": 207.38,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 3.8,
+          "mem_mb": 18.0
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645477,
+      "cpu_usage": 8.8,
+      "cpu_idle": 91.2,
+      "mem_available_mb": 207.26,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 0.0,
+          "mem_mb": 18.0
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645480,
+      "cpu_usage": 9.5,
+      "cpu_idle": 90.5,
+      "mem_available_mb": 207.25,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 0.0,
+          "mem_mb": 18.0
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    },
+    {
+      "timestamp": 1780645482,
+      "cpu_usage": 10.5,
+      "cpu_idle": 89.5,
+      "mem_available_mb": 207.52,
+      "processes": {
+        "com.cmcc.jarvis": {
+          "cpu": 0.0,
+          "mem_mb": 18.0
+        },
+        "media.swcodec": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        },
+        "audioserver": {
+          "cpu": 0.0,
+          "mem_mb": 11.0
+        }
+      }
+    }
+  ],
+  "warnings": [],
+  "trend_analysis": "Monitored 30 samples over 60 seconds (2-second intervals). Average CPU usage: 9.4% (idle: 90.6%) Average available memory: 207.2MB com.cmcc.jarvis: avg CPU 22.9%, peak 55.5% CPU load remains stable. Memory usage remains stable."
+}

@@ -1,0 +1,23 @@
+{
+  "device": {
+    "ip": "10.7.187.15:5555",
+    "adb_path": "adb"
+  },
+  "ai_analysis": {
+    "mode": "rule_based",
+    "claude_api_enabled": false,
+    "claude_api_key": "",
+    "claude_model": "claude-3-5-sonnet-20241022"
+  },
+  "monitoring": {
+    "log_sampling_rate": 100,
+    "performance_sampling_interval": 2
+  },
+  "websocket": {
+    "host": "127.0.0.1",
+    "port": 8765
+  },
+  "database": {
+    "path": "data/test_results.db"
+  }
+}

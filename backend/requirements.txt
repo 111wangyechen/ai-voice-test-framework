@@ -1,0 +1,18 @@
+# Web 框架
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+websockets==12.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+python-multipart==0.0.6
+aiofiles==23.2.1
+
+# 数据/模板
+pandas==2.1.3
+pyyaml==6.0.1
+jinja2==3.1.2
+
+# Claude API（AI 增强模式可选启用，无 key 时不会被使用）
+# anthropic 0.40+ 兼容现代 httpx；旧版 0.7.0 与 httpx>=0.28 不兼容
+anthropic>=0.40.0,<1.0
+httpx>=0.27.0,<0.29.0
