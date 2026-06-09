@@ -3,7 +3,10 @@ import { ref, computed } from 'vue'
 import axios from 'axios'
 
 // API基础URL
-const API_BASE_URL = 'http://localhost:8000'
+// 打包后前端由后端在同源托管，直接用当前页面地址；
+// 开发模式下页面在 5173，通过 vite proxy 转发，因此回退到 8000。
+const isDev = import.meta.env.DEV
+const API_BASE_URL = isDev ? 'http://localhost:8000' : window.location.origin
 // WebSocket基础URL（与API同源，协议换成ws）
 const WS_BASE_URL = API_BASE_URL.replace(/^http/, 'ws')
 

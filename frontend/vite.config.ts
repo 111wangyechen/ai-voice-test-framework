@@ -3,6 +3,8 @@ import vue from '@vitejs/plugin-vue'
 import path from 'path'
 
 export default defineConfig({
+  // 相对路径：让打包后由后端 StaticFiles 在任意挂载点托管时资源都能正确加载
+  base: './',
   plugins: [vue()],
   resolve: {
     alias: {

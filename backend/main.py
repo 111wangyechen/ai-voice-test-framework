@@ -4,7 +4,10 @@
 import asyncio
 import json
 import os
+import sys
 import shutil
+import threading
+import webbrowser
 from pathlib import Path
 from typing import Dict, Any, Optional
 import random
@@ -12,6 +15,7 @@ import time
 import logging
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 # 导入本地模块
@@ -29,6 +33,42 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+
+def resource_path(relative: str) -> Path:
+    """
+    解析资源路径，兼容三种运行方式：
+    1. PyInstaller 单文件包：资源解压到 sys._MEIPASS
+    2. 直接运行 backend/main.py：资源在项目根目录（main.py 的上级）
+    3. 当前工作目录回退
+    其中 frontend/dist 和 workflows 通过 spec 的 datas 打入包内。
+    """
+    # PyInstaller 运行时
+    base = getattr(sys, "_MEIPASS", None)
+    if base:
+        candidate = Path(base) / relative
+        if candidate.exists():
+            return candidate
+    # 源码运行：项目根 = backend 的上一级
+    project_root = Path(__file__).resolve().parent.parent
+    candidate = project_root / relative
+    if candidate.exists():
+        return candidate
+    # 回退到 backend 同级
+    return Path(__file__).resolve().parent / relative
+
+
+def open_browser_when_ready(url: str, delay: float = 1.5) -> None:
+    """延迟在后台线程打开默认浏览器，避免阻塞服务启动。"""
+    def _open():
+        time.sleep(delay)
+        try:
+            webbrowser.open(url)
+            logger.info(f"已在默认浏览器打开界面: {url}")
+        except Exception as e:
+            logger.warning(f"自动打开浏览器失败，请手动访问 {url}: {e}")
+
+    threading.Thread(target=_open, daemon=True).start()
+
 app = FastAPI(title="AI Voice Test Framework - Multi-Agent Edition")
 
 # CORS配置
@@ -43,7 +83,7 @@ app.add_middleware(
 )
 
 # Workflow脚本目录
-WORKFLOW_DIR = Path(__file__).parent.parent / "workflows"
+WORKFLOW_DIR = resource_path("workflows")
 
 # 活动的workflow实例
 active_workflows: Dict[str, Dict[str, Any]] = {}
@@ -796,9 +836,9 @@ async def websocket_performance(websocket: WebSocket):
         logger.error(f"[WS] /ws/performance 错误: {e}", exc_info=True)
 
 
-@app.get("/")
-async def root():
-    """API根路径"""
+@app.get("/api")
+async def api_info():
+    """API信息（前端页面挂载在 / ，API文档移到 /api）"""
     return {
         "name": "AI Voice Test Framework - Multi-Agent Edition",
         "version": "2.0.0",
@@ -835,6 +875,32 @@ async def root():
     }
 
 
+# ============================================================
+# 静态前端托管（必须在所有 API/WS 路由定义之后挂载，
+# 否则 "/" 的 catch-all 会拦截 API 请求）
+# ============================================================
+_frontend_dir = resource_path("frontend/dist")
+if _frontend_dir.exists() and (_frontend_dir / "index.html").exists():
+    # html=True 使其在访问目录时返回 index.html，支持 SPA
+    app.mount("/", StaticFiles(directory=str(_frontend_dir), html=True), name="frontend")
+    logger.info(f"前端静态文件已挂载: {_frontend_dir}")
+else:
+    logger.warning(
+        f"未找到前端构建产物 ({_frontend_dir})，仅提供 API。"
+        f"请先在 frontend 目录执行 npm run build。"
+    )
+
+
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+
+    PORT = int(os.environ.get("PORT", "8000"))
+    url = f"http://localhost:{PORT}"
+
+    # 打包后（前端已挂载）才自动打开浏览器；纯 API 开发模式不打扰
+    if _frontend_dir.exists():
+        print(f"\n{'='*50}\n  AI 语音测试工具已启动\n  界面地址: {url}\n  正在打开浏览器...\n{'='*50}\n")
+        open_browser_when_ready(url)
+
+    # 打包环境下关闭 uvicorn 的彩色/重载日志噪音
+    uvicorn.run(app, host="0.0.0.0", port=PORT, log_level="info")

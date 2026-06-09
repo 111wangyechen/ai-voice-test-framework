@@ -35,7 +35,11 @@ frontend/.vite/
 
 # Electron 构建产物
 electron/node_modules/
-release/
+
+# 打包产物：忽略 EXE 等大二进制，但保留 release 下的说明文档
+release/*.exe
+release/*.zip
+release/win-unpacked/
 
 # IDE
 .vscode/
@@ -78,3 +82,5 @@ Thumbs.db
 # 临时文件
 *.tmp
 *.temp
+*.pid
+exe_run.log
